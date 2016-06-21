@@ -1,0 +1,271 @@
+@font-face {
+    font-family: avantgarde;
+    src: url("avantgarde.ttf") format("truetype");
+}
+
+html { 
+    background-color: #d8d4d4;
+    font-family: avantgarde;
+    font-size: 12px;
+}
+
+#page{
+    width: 1000px;
+    height: 900px;
+    background-color: white;
+    margin: 0 auto 0 auto;
+    
+    -moz-box-shadow: 0px 0px 5px 0.5px #656565;
+    -webkit-box-shadow: 0px 0px 5px 0.5px #656565;
+    -o-box-shadow: 0px 0px 5px 0.5px #656565;
+    box-shadow: 0px 0px 5px 0.5px #656565;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=NaN, Strength=5);
+}
+
+#page #erreur{
+    position: absolute;
+    display: none;
+    top: 8px;
+    right: 25px;
+    color: #0EA906;
+}
+
+#page hr{
+    width: 777px;
+    height: 1px;
+    border: 0 none;
+    background-color: black;
+}
+
+nav{
+    position: relative;
+    height: 70px;
+    width: 1000px;
+}
+
+nav #boutonsSemestres{
+    position: absolute;
+    top: 30px;
+    left: 170px;
+}
+
+nav #infosProf{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    border-collapse: collapse;
+}
+
+nav #infosProf td{
+    text-align: center;
+}
+
+nav #infosProf td#nomProf{
+    font-size: 14px;
+}
+
+nav #infosProf hr{
+    right: 90px;
+    width: 1px;
+    height: 30px;
+    margin: 0 10px 0 10px;
+    background-color: black;
+}
+
+nav #infosProf .profBouton{
+    width: 15px;
+    height: 17px;
+    padding: 4px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+nav #infosProf .profBouton:hover{
+    background-color: #e6e6e6;
+}
+
+/*#content{
+    
+}*/
+#content #modules{
+    width: 35%;
+    height: 320px;
+    border: 1px solid black;
+    float:left ;
+    margin-left:40px;
+}
+#content #affectationFinale{
+    height: 320px;
+    width: 25%;
+    border: 1px solid black;
+    float:left ;
+        margin-left:20px;
+}
+
+#content #professeurs{
+    margin-left:20px ;
+    float:left;
+    height: 320px;
+    width: 25%;
+    border: 1px solid black;
+}
+#content #graph{
+    position: relative;
+    top: 40px;
+    left: 25px;
+    width: 950px;
+    height: 288px;
+}
+
+.semestresBouton {
+  background: #ffffff;
+  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -ms-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  color: #000000;
+  font-size: 14px;
+  padding: 10px 20px 10px 20px;
+  border: solid #000000 1px;
+  text-decoration: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.semestresBouton:hover {
+  background: #e6e6e6;
+  background-image: -webkit-linear-gradient(top, #e6e6e6, #ffffff);
+  background-image: -moz-linear-gradient(top, #e6e6e6, #ffffff);
+  background-image: -ms-linear-gradient(top, #e6e6e6, #ffffff);
+  background-image: -o-linear-gradient(top, #e6e6e6, #ffffff);
+  background-image: linear-gradient(to bottom, #e6e6e6, #ffffff);
+  text-decoration: none;
+}
+
+#scroll{
+    position: relative;
+    height: 320px;
+}
+
+#content #modules #scroll #semestre{
+    position: absolute;
+    border-collapse: collapse;
+    top: 40px;
+    left: 40px;
+    height: 100px;
+}
+
+#content img.logoBlock{
+    position: absolute;
+    top: -16px;
+    left: -16px;
+    width: 80px;
+    height: 80px;
+    z-index: 1;
+}
+
+#content #semestre td{
+    text-align: center;
+}
+
+#content #semestre td input{
+    width: 30px;
+}
+
+#content #semestre th{
+    width: 350px;
+    text-align: left;
+    font-size: 11px;
+    cursor: pointer;
+    padding-left: 9px;
+}
+
+#content #semestre {
+    border: 1px solid #424242;
+    background-color: #D8D8D8;
+    height: 35px;
+}
+
+#content #affectationFinale td{
+    text-align: center;
+}
+
+#content #affectationFinale th{
+    width: 350px;
+    font-size: 11px;
+    cursor: pointer;
+    padding-left: 9px;
+}
+
+#content #affectationFinale {
+    border: 1px solid #424242;
+    overflow-y: scroll;
+     z-index:0;
+}
+
+
+#content #professeurs #Autres {
+    border: 1px solid #424242;
+    //background-color: #D8D8D8;
+    height: 35px;
+    text-align : center ; 
+}
+
+#content #professeurs #Autres  td{
+    text-align: center;
+}
+#content #professeurs #Autres  tr{      
+    border : 1px solid black;
+}
+
+
+#content #professeurs #Autres  th{
+    width: 5500px;
+    text-align: left;
+    font-size: 11px;
+    cursor: pointer;
+    padding-left: 9px;
+}
+                                             
+#content #professeurs #desiree  #Depanne{
+    border: 1px solid #424242;
+    background-color: #D8D8D8;
+    height: 35px;
+    text-align : center ; 
+}
+
+#content #professeurs #desiree  #Depanne td{
+    text-align: center;
+}
+
+
+#content #professeurs #desiree #Depanne th{
+    width: 5500px;
+    text-align: left;
+    font-size: 11px;
+    cursor: pointer;
+    padding-left: 9px;
+}
+
+
+input {
+ align:center; 
+}
+
+progress:hover:after {
+    display: block;
+    content: attr(value);
+    text-align:center;
+}
+
+.ligneModules {
+    //  border: 1px solid black;
+}
+
+#chartContainer {
+  //margin-top:500x;
+}

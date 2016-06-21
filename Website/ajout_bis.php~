@@ -1,0 +1,82 @@
+<?php
+
+require_once 'myPDO.include.php' ;
+
+//TODO : VERIFIER SI LES MODULES EXISTENT !!!!!!
+//TODO : SORTIR SES DOIGTS DU FION.
+//TODO : Faire la meme chose pour les profs : copier coller ce sript + function js qui récupére à l'identique le fichier csv pour les profs
+//TODO : VIRER TOUT CE QUI EST DANS LE INFS3_PRJ05 CAR IL VA ETRE BIENTOT SUPPR
+//TODO : FAIRE UN GIT
+//TODO : VERIFIER SI LE $CSV est bon (du var_dump)
+
+
+function readCSV($csvFile){
+	$file_handle = fopen($csvFile, 'r');
+	while (!feof($file_handle) ) {
+		$line_of_text[] = fgetcsv($file_handle, 1024);
+	}
+	fclose($file_handle);
+	return $line_of_text;
+}
+
+if(isset($_FILES) && !empty ($_FILES)){
+
+//PARSER LE $_FILES EN ARRAY
+var_dump($_FILES['textfield1']['name']);
+    $csv = readCSV($_FILES['textfield1']['name']);
+    var_dump($csv);
+}
+
+/*
+if(isset($_GET['data']) && !empty ($_GET['data'])){
+ $data = $_GET['data'];
+ 
+  $pdo = myPDO::getInstance() ;
+    $stmt = $pdo->prepare(<<<SQL
+      DELETE FROM Module
+      WHERE idModule = :idMod
+SQL
+);
+
+$stmt->bindParam(':idMod', $identifiantModule);
+for($i=1 ; $i<sizeof($data); $i++){ 
+  $identifiantModule = $data[$i][0];
+  $stmt -> execute();
+}
+ 
+ 
+ 
+ $pdo = myPDO::getInstance() ;
+    $stmt = $pdo->prepare(<<<SQL
+      INSERT INTO Module(idModule, nom, nbHTP_PPN, nbHTD_PPN, nbHCM_PPN, TDM, idSemestre) VALUES(:id, :nom ,:nbHTP_PPN, :nbHTD_PPN, :nbHCM_PPN, :TDM, :idSem)
+SQL
+);
+
+$stmt->bindParam(':id',$id);
+$stmt->bindParam(':nom',$nom);
+$stmt->bindParam(':nbHTP_PPN',$HTP_PPN);
+$stmt->bindParam(':nbHTD_PPN',$HTD_PPN);
+$stmt->bindParam(':nbHCM_PPN',$HCM_PPN);
+$stmt->bindParam(':TDM',$TDM);
+$stmt->bindParam(':idSem',$idSemestre);
+   
+var_dump($data); 
+ 
+ 
+for($i=1 ; $i<sizeof($data); $i++){ 
+      $id=$data[$i][0] ;     
+      $nom=$data[$i][1] ;     
+      $HTP_PPN=$data[$i][2] ; 
+      $HTD_PPN=$data[$i][3] ; 
+      $HCM_PPN=$data[$i][4] ;
+      $idSemestre = $data[$i][6];
+      $TDM = ($data[$i][5] == '1') ? true : false;
+      //var_dump($data[$i][5]);
+$stmt->execute() ;
+  }
+
+header("refresh:2; affectation.php"); 
+header('Content-type: text/html; charset=utf-8');
+echo "Les modules ont bien été ajouté";
+
+}*/

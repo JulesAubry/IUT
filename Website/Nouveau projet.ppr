@@ -1,0 +1,120 @@
+[Config]
+Compilator.SaveAll=0
+Compilator.Capture=0
+Compilator.HideOutput=0
+Compilator.ProgSaveAll=0
+Compilator.ProgRunSelection=0
+Compilator.LogType=0
+DefaultCPIndex=0
+LogtoEnd=1
+DontOpen=0
+AbsolutePath=0
+FileFormat=0
+ProjectFilesOnly=0
+[Project tree]
+Nouveau projet
+	+Site
+		js\voeux.js
+		js\module.js
+		voeux.php
+		recupererIdIntervenant.php
+		semestre.php
+		js\affectation.js
+		css\voeux.css
+		save_voeux_session.php
+		calcul_valeurs_graphique.php
+		test.html
+		init_BD.php
+		calendrier.php
+		envoi.php
+		stats.php
+		index.php
+		admin.php
+		ajout.php
+		css\module.css
+		module.php
+		suppr.php
+		quotas.php
+		infosModule.php
+		affectation.php
+		css\affectation.css
+		sequence.php
+		modif.php
+		css\admin.css
+		rechercheProf.php
+		graphiqueModule.php
+		infosRepartitionSequence.php
+		graphiqueVoeux.php
+		ajout_bis.php
+[Open project files]
+0=semestre.php
+1=js\affectation.js
+2=affectation.php
+3=css\affectation.css
+4=rechercheProf.php
+5=module.php
+6=js\module.js
+7=graphiqueModule.php
+8=calendrier.php
+9=js\voeux.js
+10=infosRepartitionSequence.php
+11=graphiqueVoeux.php
+12=infosModule.php
+13=css\voeux.css
+14=voeux.php
+15=ajout_bis.php
+16=ajout.php
+[Selected Project Files]
+Main=
+Selected=graphiqueModule.php
+[semestre.php]
+TopLine=1
+Caret=1,1
+[js\affectation.js]
+TopLine=537
+Caret=10,571
+[affectation.php]
+TopLine=75
+Caret=35,100
+[css\affectation.css]
+TopLine=187
+Caret=15,207
+[rechercheProf.php]
+TopLine=3
+Caret=1,1
+[module.php]
+TopLine=29
+Caret=97,48
+[js\module.js]
+TopLine=220
+Caret=147,237
+[graphiqueModule.php]
+TopLine=1
+Caret=25,98
+[calendrier.php]
+TopLine=1
+Caret=44,88
+[js\voeux.js]
+TopLine=422
+Caret=46,451
+[infosRepartitionSequence.php]
+TopLine=1
+Caret=1,1
+[graphiqueVoeux.php]
+TopLine=27
+Caret=2,57
+[infosModule.php]
+TopLine=1
+Caret=1,5
+[css\voeux.css]
+TopLine=173
+Caret=11,196
+[voeux.php]
+TopLine=55
+Caret=44,72
+[ajout_bis.php]
+TopLine=1
+Caret=1,1
+[ajout.php]
+TopLine=271
+Caret=30,283

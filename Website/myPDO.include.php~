@@ -1,0 +1,6 @@
+<?php
+
+require_once 'myPDO.class.php' ;
+
+//myPDO::setConfiguration('mysql:host=mysql;dbname=infs4_prj04', 'infs4_prj04', 'Sf8JefyrEZG7XK9D');
+myPDO::setConfiguration('mysql:host=localhost;dbname=projets4;charset=utf8', 'root', 'jules');

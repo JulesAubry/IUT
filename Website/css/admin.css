@@ -1,0 +1,124 @@
+@font-face {
+    font-family: avantgarde;
+    src: url("avantgarde.ttf") format("truetype");
+}
+
+html { 
+    background-color: #d8d4d4;
+    font-family: avantgarde;
+    font-size: 12px;
+}
+
+.button1 {
+  background: #ffffff;
+  background-image: url('../img/organiser.png');
+  background-repeat : no-repeat;
+  background-size : 30px, 30px;
+  background-position : 10% , 10%;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  color: #000000;
+  font-size: 14px;
+  padding: 10px 20px 10px 30px;
+  border: solid #000000 1px;
+  text-decoration: none;
+  margin-right: 10px;
+  cursor: pointer;
+  display: inline;
+  width: 250px;
+  height : 80px;
+}
+.button2 {
+  background: #ffffff;
+  background-image: url('../img/voeux.jpg');
+  background-repeat : no-repeat;
+  background-size : 30px, 30px;
+  background-position : 10% , 10%;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  color: #000000;
+  font-size: 14px;
+  padding: 10px 20px 10px 30px;
+  border: solid #000000 1px;
+  text-decoration: none;
+  margin-right: 10px;
+  cursor: pointer;
+  display: inline;
+  width: 250px;
+  height : 80px;
+}
+.button3 {
+  background: #ffffff;
+  background-image: url('../img/ajouter.png');
+  background-repeat : no-repeat;
+  background-size : 30px, 30px;
+  background-position : 10% , 10%;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  color: #000000;
+  font-size: 14px;
+  padding: 10px 20px 10px 30px;
+  border: solid #000000 1px;
+  text-decoration: none;
+  margin-right: 10px;
+  cursor: pointer;
+  display: inline;
+  width: 250px;
+  height : 80px;
+  margin-top : 10px;
+}
+
+.button4 {
+  background: #ffffff;
+  background-image: url('../img/visualisation.png');
+  background-repeat : no-repeat;
+  background-size : 30px, 30px;
+  background-position : 10% , 10%;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  color: #000000;
+  font-size: 14px;
+  padding: 10px 20px 10px 30px;
+  border: solid #000000 1px;
+  text-decoration: none;
+  margin-right: 10px;
+  cursor: pointer;
+  display: inline;
+  width: 250px;
+  height : 80px;
+  margin-top : 10px;
+}
+
+#page .buttons {
+  margin: 17% auto auto 33%;
+}
+
+
+.button:hover {
+  background: #e6e6e6;
+  background-image: -webkit-linear-gradient(top, #e6e6e6, #ffffff);
+  background-image: -moz-linear-gradient(top, #e6e6e6, #ffffff);
+  background-image: -ms-linear-gradient(top, #e6e6e6, #ffffff);
+  background-image: -o-linear-gradient(top, #e6e6e6, #ffffff);
+  background-image: linear-gradient(to bottom, #e6e6e6, #ffffff);
+  text-decoration: none;
+}
+
+
+.logoutButton {
+  width: 15px;
+  height: 17px;
+  padding: 4px;
+  margin-top: 4px;
+  margin-right: 10px;
+  margin-left : 98%;
+  cursor: pointer;
+}
+
+.logoutButton:hover{
+    background-color: #ffffff;
+}

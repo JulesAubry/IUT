@@ -1,0 +1,59 @@
+<?php
+
+require_once "myPDO.include.php";
+
+if(isset($_GET['id']) && !empty($_GET['id'])){
+	$pdo = myPDO::getInstance() ;
+	$stmt = $pdo->prepare(<<<SQL
+		SELECT m.idMatiere, m.libMatiere, m.demiSemestre, m.nbHCM_PPN, m.nbHTP_PPN, m.nbHTD_PPN, s.libSequence, s.nbH_Total
+		FROM Sequence_Pedagogique s, Matiere m, Repartition r 
+		WHERE s.idMatiere = m.idMatiere
+		AND s.idSequence = r.idSequence
+		AND r.idSemestre = :id
+SQL
+);
+	$stmt->execute(array('id'=>$_GET['id']));
+	
+
+	$modules = array();
+	/*$valeurCM = "";
+	$valeurTD = "";
+	$valeurTP = "";
+	$heuresCM = 0;       */
+	
+	while(($ligne = $stmt->fetch()) !== false){
+		$modules[] = $ligne;
+	}
+	
+var_dump($modules);
+	//session_start();
+	  /*
+	$jsonModules = array();   
+	foreach($modules as $value){
+	
+		if(isset($_SESSION['voeux']['saisie'][$value['idModule']]['CM'])){
+			$valeurCM = $_SESSION['voeux']['saisie'][$value['idModule']]['CM'];
+		}
+		if(isset($_SESSION['voeux']['saisie'][$value['idModule']]['TD'])){
+			$valeurTD = $_SESSION['voeux']['saisie'][$value['idModule']]['TD'];
+		}
+		if(isset($_SESSION['voeux']['saisie'][$value['idModule']]['TP'])){
+			$valeurTP = $_SESSION['voeux']['saisie'][$value['idModule']]['TP'];
+		}
+		
+		if(isset($_SESSION['voeux']['infos'][$value['idModule']])){
+			foreach($_SESSION['voeux']['infos'][$value['idModule']] as $semaine=>$valeur){
+				$heuresCM += $valeur['CM'];
+			}
+		}
+		
+		$jsonModules[] = array('id' => $value['idModule'], 'nom' => $value['nom'], 'CM' => $valeurCM, 'TD' => $valeurTD, 'TP' => $valeurTP, 'maxCM' => $heuresCM); 
+		$valeurCM = null;
+		$valeurTD = null;
+		$valeurTP = null;
+		$heuresCM = 0;
+	}
+	                         */
+  
+	echo json_encode($modules);
+}

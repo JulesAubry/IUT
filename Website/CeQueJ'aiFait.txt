@@ -1,0 +1,12 @@
+->Problème au niveau de l'idSemestre dde la table Semaine_travaillee 
+	Résolution : supression de celui ci, pas nécessaire, on ne s'en sert pas. envoi.php modifié
+->Bouton accueil sur toutes les pages
+->Affectation.php (nom à la con vu que c'est ce qui s'occupe de gérer les modules). Reprise compléte du code, plus rien n'est d'origine.
+->ajout() modifié, ajout.php idem (balek du demiSemestre vu qu'on fait en fonction des Semaines, non ?).
+->TODO : TDM ou pas, je fais sans juste pour que ça marche, je reprends ensuite.
+->la fonction checkModule marche ?? elle remarche désormais. La suite demain.
+
+//
+Toujours le problème sur l'idSemestre de la table semaine Travaillée, y'en a besoin..
+ajout fonctionnel entièrement
+page prof commencée, gros boulot dessus à faire.

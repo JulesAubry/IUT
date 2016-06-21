@@ -1,0 +1,9 @@
+#affectation td {
+    border : 1px solid black;
+}
+
+#affectation {
+  text-align : left;
+  margin-left : 50px;
+  font-size : 25px;  
+}
