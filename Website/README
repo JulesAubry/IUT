@@ -1,7 +1,1 @@
-1 - Dézipper l'archive
-2 - Importer la BD grâce à phpmyadmin avec le fichier dans l'archive projetS3.sql
-3 - Modifier le fichier myPDO.include.php avec les logs de votre BD 
-
-exemple : myPDO::setConfiguration('mysql:host=mysql;dbname=[leNomDeVotreBase]', '[nomUtilisateur]', '[motDePasse]');
-
-4 - Travailler.
+PROJECT OF DATA BASE IN IUT
